@@ -4,6 +4,7 @@
     --primary-color: #9292e4;
     --secondary-color: #1b1b8d;
     --accent-color: #2424e1;
+    --accent-color-semi-transparent: #2424e166;
 }
 
 * {
@@ -49,7 +50,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(36, 36, 255, 0.4);
+    background: var(--accent-color-semi-transparent);
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
@@ -159,11 +160,15 @@
 }
 
 .header-div-cell h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.header-div-cell p {
+    font-size: 1.5rem;
 }
 
 .header-div-cell h2,
-.header-div-cell h3 {
+.header-div-cell p {
     padding: 1rem 0;
 }
 
@@ -209,4 +214,20 @@
 
 .accent {
     color: var(--accent-color);
+}
+
+.icon-cards {
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    border-radius: 16px;
 }

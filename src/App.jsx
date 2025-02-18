@@ -29,10 +29,43 @@ function App() {
                             <div className="vertical-line"></div>
                         </div>
                         <div className="header-div-cell">
-                            <h3>
+                            <p>
                                 Clean code, scalable systems, and a whole lot of passion, that&apos;s how I aspire to
                                 engineer solutions.
-                            </h3>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="icon-cards">
+                        <div className="card">
+                            <IconContext.Provider value={{ size: "10em" }}>
+                                <MdComputer />
+                            </IconContext.Provider>
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Responsive websites built for an optimal user experience that achieves your busieness
+                                goals.
+                            </p>
+                        </div>
+                        <div className="card">
+                            <IconContext.Provider value={{ size: "10em" }}>
+                                <MdComputer />
+                            </IconContext.Provider>
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Responsive websites built for an optimal user experience that achieves your busieness
+                                goals.
+                            </p>
+                        </div>
+                        <div className="card">
+                            <IconContext.Provider value={{ size: "10em" }}>
+                                <MdComputer />
+                            </IconContext.Provider>
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Responsive websites built for an optimal user experience that achieves your busieness
+                                goals.
+                            </p>
                         </div>
                     </div>
                 </div>
