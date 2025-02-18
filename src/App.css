@@ -157,9 +157,9 @@
 
 .header-div-cell h2 {
     font-size: 2rem;
-    padding: 1rem 0;
 }
 
+.header-div-cell h2,
 .header-div-cell h3 {
     padding: 1rem 0;
 }
