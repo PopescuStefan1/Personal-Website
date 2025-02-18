@@ -30,8 +30,19 @@
     align-items: center;
 }
 
+.header-div-cell h2 {
+    font-size: 2rem;
+}
+
 .centered-cell {
     justify-content: center;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .icon-container {
@@ -44,8 +55,25 @@
     justify-content: center;
 }
 
+.icon-vertical-line {
+    flex-grow: 1;
+    background-color: var(--primary-color);
+}
+
 .vertical-line {
     height: 100%;
+    background-image: linear-gradient(to bottom, var(--primary-color), transparent);
+}
+
+.vertical-line,
+.icon-vertical-line {
     width: 2px;
-    background-color: var(--primary-color);
+}
+
+.grow-div {
+    flex-grow: 1;
+}
+
+.accent {
+    color: var(--accent-color);
 }
