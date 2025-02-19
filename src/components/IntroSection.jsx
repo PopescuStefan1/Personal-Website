@@ -15,7 +15,6 @@ const IntroSection = () => (
                 innovative digital products and committed to life-long learning.
             </p>
             <div className="contact-div">
-                {/* Email */}
                 <div className="contact-info-container">
                     <IconContext.Provider value={{ size: "4em" }}>
                         <div
@@ -27,7 +26,6 @@ const IntroSection = () => (
                     </IconContext.Provider>
                     <p>Email</p>
                 </div>
-                {/* GitHub */}
                 <div className="contact-info-container">
                     <IconContext.Provider value={{ size: "4em" }}>
                         <div
@@ -41,7 +39,6 @@ const IntroSection = () => (
                     </IconContext.Provider>
                     <p>GitHub</p>
                 </div>
-                {/* LinkedIn */}
                 <div className="contact-info-container">
                     <IconContext.Provider value={{ size: "4em" }}>
                         <div
@@ -59,7 +56,6 @@ const IntroSection = () => (
                     </IconContext.Provider>
                     <p>LinkedIn</p>
                 </div>
-                {/* CV */}
                 <div className="contact-info-container">
                     <IconContext.Provider value={{ size: "4em" }}>
                         <div
