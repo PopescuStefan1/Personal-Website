@@ -70,27 +70,29 @@ function App() {
                             <IconContext.Provider value={{ size: "10em" }}>
                                 <FaServer />
                             </IconContext.Provider>
-                            <h3>Backend Engineering</h3>
+                            <h3>Backend Design</h3>
                             <p>
-                                Designing robust, scalable APIs and database architectures to serve users content in the
-                                best way possible.
+                                Constructing robust, scalable APIs and database architectures to serve users content in
+                                the best way possible.
                             </p>
                         </div>
                         <div className="card">
                             <IconContext.Provider value={{ size: "10em" }}>
                                 <FaBookOpen />
                             </IconContext.Provider>
-                            <h3>Software Development</h3>
+                            <h3>Software Engineering</h3>
                             <p>
-                                Software Engineering is one of my passions, and I love constantly learning and expanding
-                                my current knowledge and expertise.
+                                Constantly learning and expanding my current knowledge and expertise out of my passion
+                                for software.
                             </p>
                         </div>
                     </div>
 
                     <div className="intro-div">
                         <div className="intro-container">
-                            <h1>Hey, I&apos;m Stefan.</h1>
+                            <h1>
+                                Hey, I&apos;m <span className="accent">Stefan</span>
+                            </h1>
                             <p>
                                 I am a Software Engineer and Cybersecurity Master&apos;s Student. I&apos;m eager to
                                 contribute to innovative digital products and commited to life-long learning.
