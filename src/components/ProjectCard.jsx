@@ -14,7 +14,7 @@ const ProjectCard = ({ images, title, description, websiteLink, githubLink }) =>
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
             }, 2500);
         } else {
-            setCurrentImageIndex(0); // Reset when not hovered (optional)
+            setCurrentImageIndex(0);
         }
 
         return () => clearInterval(intervalId);
