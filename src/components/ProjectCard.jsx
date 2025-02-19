@@ -35,7 +35,7 @@ const ProjectCard = ({ images, title, description, websiteLink, githubLink }) =>
                 </div>
                 <div className="contentBx">
                     <div></div>
-                    <h3>{title}</h3>
+                    <div className="project-card-title">{title}</div>
                     <button onClick={() => window.open(websiteLink ?? githubLink, "_blank", "noopener,noreferrer")}>
                         {websiteLink ? "Visit Website" : "Github Link"}
                     </button>
