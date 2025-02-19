@@ -1,6 +1,6 @@
-# Stefan's Portfolio
+# Personal Website
 
-A modern, responsive portfolio website built with React. It features a smooth, collapsible navbar, animated background effects, interactive project cards with image carousels, and a contact section with links to my email, GitHub, LinkedIn, and CV.
+A modern, responsive personal website built with React. It features a smooth, collapsible navbar, animated background effects, interactive project cards with image carousels, and a contact section with links to my email, GitHub, LinkedIn, and CV.
 
 ![image](https://github.com/user-attachments/assets/cbe3e7f5-c8e6-4ffb-985e-e4864a25879f)
 
