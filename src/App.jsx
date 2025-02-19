@@ -17,6 +17,7 @@ function App() {
         const resizeObserver = new ResizeObserver((entries) => {
             for (let entry of entries) {
                 circles.style.setProperty("--container-height", `${entry.contentRect.height}px`);
+                console.log(entry);
             }
         });
 
@@ -102,15 +103,23 @@ function App() {
                     </div>
 
                     <div className="projects-div">
-                        {projects.map((project, index) => (
-                            <ProjectCard key={index} {...project} />
-                        ))}
+                        <h1>Personal Projects</h1>
+                        <div className="projects-container">
+                            {projects.map((project, index) => (
+                                <ProjectCard key={index} {...project} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="area">
                 <ul className="circles" ref={circlesRef}>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                     <li></li>
                     <li></li>
                     <li></li>

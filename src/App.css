@@ -138,10 +138,50 @@ a {
 
 .circles li:nth-child(10) {
     left: 85%;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     animation-delay: 0s;
     animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+    left: 55%;
+    width: 115px;
+    height: 115px;
+    animation-delay: -15s;
+    animation-duration: 25s;
+}
+
+.circles li:nth-child(12) {
+    left: 80%;
+    width: 40px;
+    height: 40px;
+    animation-delay: -2s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(13) {
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    animation-delay: -15s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(14) {
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    animation-delay: -10s;
+    animation-duration: 28s;
+}
+
+.circles li:nth-child(15) {
+    left: 45%;
+    width: 200px;
+    height: 200px;
+    animation-delay: -10s;
+    animation-duration: 25s;
 }
 
 @keyframes animate {
@@ -152,13 +192,14 @@ a {
     }
 
     100% {
-        transform: translateY(calc(-1 * var(--container-height))) rotate(720deg);
+        transform: translateY(calc(-1 * (var(--container-height) + 200px))) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
 }
 
 .container {
+    width: 100%;
     padding: 4rem 16rem;
     max-width: 1600px;
 }
@@ -241,6 +282,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .card {
@@ -279,6 +321,18 @@ a {
 }
 
 .projects-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.projects-div h1 {
+    margin-left: 3rem;
+}
+
+.projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
@@ -403,4 +457,22 @@ a {
 
 .project-card .project-card-description a:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 999px) {
+    .container {
+        padding: 0;
+    }
+
+    .projects-container,
+    .icon-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+    .projects-container,
+    .icon-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
