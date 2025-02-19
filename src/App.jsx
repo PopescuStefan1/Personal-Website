@@ -1,6 +1,7 @@
 import "./App.css";
 import { IconContext } from "react-icons";
 import { MdComputer } from "react-icons/md";
+import { FaServer, FaMobileScreen, FaBookOpen } from "react-icons/fa6";
 
 function App() {
     return (
@@ -39,32 +40,29 @@ function App() {
                     <div className="icon-cards">
                         <div className="card">
                             <IconContext.Provider value={{ size: "10em" }}>
-                                <MdComputer />
+                                <FaMobileScreen />
                             </IconContext.Provider>
                             <h3>Frontend Development</h3>
+                            <p>Building beautiful, responsive websites to deliver seamless user experiences.</p>
+                        </div>
+                        <div className="card">
+                            <IconContext.Provider value={{ size: "10em" }}>
+                                <FaServer />
+                            </IconContext.Provider>
+                            <h3>Backend Engineering</h3>
                             <p>
-                                Responsive websites built for an optimal user experience that achieves your busieness
-                                goals.
+                                Designing robust, scalable APIs and database architectures to serve users content in the
+                                best way possible.
                             </p>
                         </div>
                         <div className="card">
                             <IconContext.Provider value={{ size: "10em" }}>
-                                <MdComputer />
+                                <FaBookOpen />
                             </IconContext.Provider>
-                            <h3>Frontend Development</h3>
+                            <h3>Software Development</h3>
                             <p>
-                                Responsive websites built for an optimal user experience that achieves your busieness
-                                goals.
-                            </p>
-                        </div>
-                        <div className="card">
-                            <IconContext.Provider value={{ size: "10em" }}>
-                                <MdComputer />
-                            </IconContext.Provider>
-                            <h3>Frontend Development</h3>
-                            <p>
-                                Responsive websites built for an optimal user experience that achieves your busieness
-                                goals.
+                                Software Engineering is one of my passions, and I love constantly learning and expanding
+                                my current knowledge and expertise.
                             </p>
                         </div>
                     </div>
