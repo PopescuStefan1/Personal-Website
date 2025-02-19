@@ -37,14 +37,14 @@ const ProjectCard = ({ images, title, description, websiteLink, githubLink }) =>
                     <div></div>
                     <div className="project-card-title">{title}</div>
                     <button onClick={() => window.open(websiteLink ?? githubLink, "_blank", "noopener,noreferrer")}>
-                        {websiteLink ? "Visit Website" : "Github Link"}
+                        {websiteLink ? "Visit Website" : "GitHub Link"}
                     </button>
                 </div>
             </div>
             <div className="project-card-description">
                 {description}{" "}
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    {websiteLink ? "Github Link" : ""}
+                    {websiteLink ? "GitHub Link" : ""}
                 </a>
             </div>
         </div>
