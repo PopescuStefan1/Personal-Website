@@ -2,10 +2,31 @@ import "./App.css";
 import { IconContext } from "react-icons";
 import { MdComputer } from "react-icons/md";
 import { FaServer, FaMobileScreen, FaBookOpen } from "react-icons/fa6";
+import { useEffect, useRef } from "react";
 
 function App() {
+    const circlesRef = useRef(null);
+
+    useEffect(() => {
+        console.log("effect");
+        const circles = circlesRef.current;
+        if (!circles) return;
+
+        // Create a ResizeObserver to update the custom property on size changes
+        const resizeObserver = new ResizeObserver((entries) => {
+            for (let entry of entries) {
+                circles.style.setProperty("--container-height", `${entry.contentRect.height}px`);
+            }
+        });
+
+        resizeObserver.observe(circles);
+
+        // Clean up on unmount
+        return () => resizeObserver.disconnect();
+    }, []);
+
     return (
-        <>
+        <div className="root-container">
             <div className="context">
                 <div className="container">
                     <div className="header-div">
@@ -66,11 +87,21 @@ function App() {
                             </p>
                         </div>
                     </div>
+
+                    <div className="intro-div">
+                        <div className="intro-container">
+                            <h1>Hey, I&apos;m Stefan.</h1>
+                            <p>
+                                I am a Software Engineer and Cybersecurity Master&apos;s Student. I&apos;m eager to
+                                contribute to innovative digital products and commited to life-long learning.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="area">
-                <ul className="circles">
+                <ul className="circles" ref={circlesRef}>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -83,7 +114,7 @@ function App() {
                     <li></li>
                 </ul>
             </div>
-        </>
+        </div>
     );
 }
 

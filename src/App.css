@@ -19,14 +19,16 @@
     margin: 0 auto;
     text-align: center;
     color: var(--text-color);
-    min-height: 100vh;
     width: 100%;
+}
+
+.root-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 .context {
     width: 100%;
-    position: absolute;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +36,11 @@
 
 .area {
     background: var(--background-color);
-    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
 }
 
@@ -141,7 +147,7 @@
     }
 
     100% {
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(calc(-1 * var(--container-height))) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
@@ -220,8 +226,12 @@
     color: var(--accent-color);
 }
 
+.icon-cards,
+.intro-div {
+    margin-top: 10rem;
+}
+
 .icon-cards {
-    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
@@ -244,4 +254,20 @@
 
 .card h3 {
     margin-top: 1rem;
+}
+
+.intro-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container {
+    max-width: 840px;
+}
+
+.intro-container p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
