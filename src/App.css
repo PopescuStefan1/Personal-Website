@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .area {
@@ -227,7 +228,8 @@
 }
 
 .icon-cards,
-.intro-div {
+.intro-div,
+.projects-div {
     margin-top: 10rem;
 }
 
@@ -270,4 +272,124 @@
 .intro-container p {
     margin-top: 1rem;
     font-size: 1.5rem;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 16px;
+    width: 450px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    height: 450px;
+}
+
+.project-card .project-card-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.project-card:hover .project-card-content .imgBx {
+    transform: scale(1.2) translateY(-40px);
+}
+
+.project-card .project-card-content .imgBx {
+    position: relative;
+    width: 350px;
+    height: 233px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.project-card .project-card-content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.project-card .project-card-content .imgBx img.active {
+    opacity: 1;
+}
+
+.project-card .project-card-content .contentBx {
+    margin-top: 1rem;
+    padding: 0 24px;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 420px;
+}
+
+.project-card:hover .project-card-content .contentBx {
+    transform: translateY(-30px);
+}
+
+.project-card .project-card-content .contentBx h3 {
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+
+.project-card:hover .project-card-content .contentBx h3 {
+    transform: translateX(-120px);
+}
+
+.project-card .project-card-content .contentBx button {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: white;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.project-card .project-card-content .contentBx button:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.project-card:hover .project-card-content .contentBx button {
+    opacity: 1;
+}
+
+.project-card .project-card-description {
+    position: absolute;
+    bottom: 40px;
+    margin: 0 6px;
+    transform: translateY(40px);
+    transition: 0.4s;
+    opacity: 0;
+    width: 450px;
+}
+
+.project-card:hover .project-card-description {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.project-card .project-card-description a:hover {
+    cursor: pointer;
 }

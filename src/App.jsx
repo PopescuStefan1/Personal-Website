@@ -3,12 +3,13 @@ import { IconContext } from "react-icons";
 import { MdComputer } from "react-icons/md";
 import { FaServer, FaMobileScreen, FaBookOpen } from "react-icons/fa6";
 import { useEffect, useRef } from "react";
+import ProjectCard from "./components/ProjectCard";
+import projects from "./data/projectsData";
 
 function App() {
     const circlesRef = useRef(null);
 
     useEffect(() => {
-        console.log("effect");
         const circles = circlesRef.current;
         if (!circles) return;
 
@@ -98,6 +99,12 @@ function App() {
                                 contribute to innovative digital products and commited to life-long learning.
                             </p>
                         </div>
+                    </div>
+
+                    <div className="projects-div">
+                        {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                        ))}
                     </div>
                 </div>
             </div>
