@@ -12,7 +12,7 @@ const IntroSection = () => (
             </h1>
             <p>
                 I am a Software Engineer and Cybersecurity Master&apos;s Student. I&apos;m eager to contribute to
-                innovative digital products and committed to life-long learning.
+                innovative digital products and I&apos;m committed to life-long learning.
             </p>
             <div className="contact-div">
                 <div className="contact-info-container">
