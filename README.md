@@ -8,18 +8,6 @@ A modern, responsive portfolio website built with React. It features a smooth, c
 
 ![image](https://github.com/user-attachments/assets/28bb2f0c-63bc-489f-a294-169c4db35051)
 
-## Table of Contents
-
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
 ## Features
 
 - **Responsive Design:** Fully responsive layout that works seamlessly across desktop and mobile devices.
